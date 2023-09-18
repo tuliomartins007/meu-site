@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Consulta de Endereço por CEP</title>
+</head>
+<body>
+    <div class="container">
+      <img src="https://static5.depositphotos.com/1010735/528/v/950/depositphotos_5280640-stock-illustration-abstract-globe.jpg">
+       <h1>ONDE EU MORO?</h1>
+        <form id="cepForm">
+            <label for="cep">Digite seu CEP:</label>
+            <input type="text" id="cep" placeholder="Digite aqui" required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+        </div>
+        <div id="addressCard" class="hidden">
+            <h2>ENDEREÇO:</h2>
+            <table>
+                <tr>
+                    <th>CEP</th>
+                    <td id="displayCep"></td>
+                </tr>
+                <tr>
+                    <th>Endereço</th>
+                    <td id="displayEndereço"></td>
+                </tr>
+                <tr>
+                    <th>Bairro</th>
+                    <td id="displayBairro"></td>
+                </tr>
+                <tr>
+                    <th>Cidade</th>
+                    <td id="displayCidade"></td>
+                </tr>
+                <tr>
+                    <th>Estado</th>
+                    <td id="displayEstado"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
